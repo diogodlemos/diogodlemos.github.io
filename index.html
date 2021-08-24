@@ -5,82 +5,100 @@
     <title>Portifólio Web Diogo Lemos</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <style>
-
-        body{
-            background-color: #194350;
-            font-family: itim;
-            color: aliceblue;
-        }
-        .circled {
-            border-radius: 100%;
-            
-        }
-        .button {
-
-            background-color: rgb(155, 18, 18);
-            color: aliceblue;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 200%;
-            padding: 25px 30px;
-            line-height: 400%;
-        }
-        p {
-            font-size: 30px;
-            font-family: itim;
-        }
-        h1 {
-            color: rgb(155, 18, 18);
-            font-size: 50px;
-        }
-        h2 ul {
-            font-size: 20px;
-            color: aliceblue;
-        }
-        ol{
-            font-size: 20px;
-            color: aliceblue;
-        }
-
-    </style>
-
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<!-- <script src="node_modules/jquery/src/"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
 </head>
+
 <body>
-
-
-
-    <h1>Portifólio Web - Diogo Lemos</h1>
-
-    <h2>Índice</h2>
-
-    <ol>
-        <a href="#Apresentacao"><li>Apresentação</li></a>
-        <a href="#hab"><li>Habilidades</li></a>
-        <a href="#Links"><li>Links</li></a>
-        
-        
-    </ol>
-
-    <h2 id="Apresentacao">Diogo Drummond Lemos de Brito</h2>
-    <img  id="fotodeperfil" src="fotoportifolio.jpg" alt="Foto de Diogo Lemos" width="300px" class="circled" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Diogo Lemos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </nav>
+  <div class="container-home" id="home">
+    <h1 class="title-home">Student Software Development</h1>
+  </div>
+  <div class="container">
+    <div class="container-profile">
+      <div class="profile">
+        <img class = 'image-profile' src="images/fotoportifolio.jpg" alt="image-profile">
+        <ul class="list-infos">
+          <li> <strong>Name:</strong> Diogo Lemos</li>
+          <li><strong>Profile:</strong> Student</li>
+          <li><strong>Email:</strong>diogodrummond@hotmail.com</li>
+          <li><strong>Phone:</strong> (31)97544-9523</li>
+        </ul>
+      </div>
+      
+      <div class="skills">
+        <h2>Skills:</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Unix & Bash</li>
+          <li class="list-group-item">HTML & CSS</li>
+          <li class="list-group-item"> Git e GitHub</li>
+          <li class="list-group-item">SoftSkills</li>
+          <li class="list-group-item">Javascript</li>
+        </ul>
+      </div>
      
-    <p>Eu sou <strong> Diogo Drummond Lemos de Brito </strong>, brasileiro, nascido em Belo Horizonte-MG em <em> 04 de agosto de 1990</em> e atualmente moro em Ouro Branco-MG</p>
+    </div>
 
-    <p>Graduado em Engenharia de Telecomunicações-UFSJ e atualmente estudante de Desenvolvimento Web na Trybe. Gosto de tecnólogia, busco soluções simples e objetivas para solucionar um problema e tenho preferências por trabalhos em equipe.  </p>
+    <div id = 'about' class = 'container-about'>
+      <h2>About me</h2>
+      <hr>
+      <p>Welcome at my portfolio, I'm a student of Web Development full-stack at Trybe and graduated in Engineering of Telecommunications at UFSJ, at university I discovery my passion for technology and programming logic.
 
-    <h3 id="hab">Minhas habilidades:</h3>
-    <ul>
-        <li>Unix & Bash</li>
-        <li>HTML</li>
-        <li> <strog>Git e GitHub</strog> </li>
-        <li>Linux</li>
+      </p>
 
-    </ul>
-
-    <a class="button" href="#fotodeperfil" id="Links">Link para a foto de perfil</a>
-    
-    <a class="button" href="https://www.devmedia.com.br/artigos/" target="_blank">Blog DevMedia</a>
-    
+    </div>
+  </div>
+  <!-- <h1>Portifólio Web - Diogo Lemos</h1>
+  <h2>Índice</h2>
+  <ol>
+    <a href="#Apresentacao"><li>Apresentação</li></a>
+    <a href="#hab"><li>Habilidades</li></a>
+    <a href="#Links"><li>Links</li></a>
+  </ol>
+  <h2 id="Apresentacao">Diogo Drummond Lemos de Brito</h2>
+  <img  id="fotodeperfil" src="fotoportifolio.jpg" alt="Foto de Diogo Lemos" width="300px" class="circled" >
+  <p>Eu sou <strong> Diogo Drummond Lemos de Brito </strong>, brasileiro, nascido em Belo Horizonte-MG em <em> 04 de agosto de 1990</em> e atualmente moro em Ouro Branco-MG</p>
+  <p>Graduado em Engenharia de Telecomunicações-UFSJ e atualmente estudante de Desenvolvimento Web na Trybe. Gosto de tecnólogia, busco soluções simples e objetivas para solucionar um problema e tenho preferências por trabalhos em equipe.  </p>
+  <h3 id="hab">Minhas habilidades:</h3>
+  <ul>
+    <li>Unix & Bash</li>
+    <li>HTML</li>
+    <li> <strog>Git e GitHub</strog> </li>
+    <li>Linux</li>
+  </ul>
+  <a class="button" href="#fotodeperfil" id="Links">Link para a foto de perfil</a>
+  <a class="button" href="https://www.devmedia.com.br/artigos/" target="_blank">Blog DevMedia</a>   -->
 </body>
 </html>
