@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-home {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    background-image: url('images/code-and-headphones-1.png');
+    color: blanchedalmond;
+}
+
+.image-profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin-left: 0;    
+}
+
+.list-infos {
+  list-style: none;
+}
+
+.container {
+  display: flex;  
+}
+
+.container-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  width: 50%;
+  margin: 20px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+  /* background-color: rgb(69, 123, 157); */
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 80px;
+  margin: 20px;
+  border-radius: 10%;
+  /* background-color: rgb(69, 123, 157); */
+  border: solid 10px whitesmoke;
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  margin: 0%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* body{
+    background-color: #194350;
+    font-family: itim;
+    color: aliceblue;
+}
+.button {
+
+    background-color: rgb(155, 18, 18);
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 200%;
+    padding: 25px 30px;
+    line-height: 400%;
+}
+p {
+    font-size: 30px;
+    font-family: itim;
+}
+h1 {
+    color: rgb(155, 18, 18);
+    font-size: 50px;
+}
+h2 ul {
+    font-size: 20px;
+    color: aliceblue;
+}
+ol{
+    font-size: 20px;
+    color: aliceblue;
+} */
